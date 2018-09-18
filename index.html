@@ -1,0 +1,162 @@
+<!--
+
+flask_documentation/index.html
+********************************************************************************
+Responsive Web Design Projects - Build a Technical Documentation Page
+https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page
+
+index.html
+
+This page serves as the interface for the sample Documentation Page
+
+********************************************************************************
+
+University of California, Irvine
+Salvador Villalon's FreeCodeCamp Projects
+Summer 2018
+
+Salvador Villalon
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Salvador Villalon Technical Documentation Page</title>
+
+    <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
+    <link href= "./static/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="./static/css/index.css" type="text/css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+
+      <!-- Navigation -->
+      <!-- ***************************************************** -->
+      <div class="navigation">
+        <nav id="nav-bar">
+
+          <div class="logo">
+            <p>Salvador Villalon: Flask and Cloud Services Documentation</p>
+          </div>
+
+          <ul>
+
+            <!-- HTTP Explanation  -->
+            <!-- ************************* -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTTP Explanation</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">What is HTTP and What does it have to do with Flask?</a>
+                <a class="dropdown-item" href="#">How is Flask Involved?</a>
+              </div>
+            </li>
+
+            <!-- Introduction to Flask  -->
+            <!-- ************************* -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Introduction to Flask</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">What is Flask?</a>
+                <a class="dropdown-item" href="#">How Does a Flask App Work?</a>
+                <a class="dropdown-item" href="#">Running main.py</a>
+                <a class="dropdown-item" href="#">More Fun with Flask</a>
+              </div>
+            </li>
+
+            <!-- HTML and CSS -->
+            <!-- ************************* -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTML and CSS</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">HTML and Templates in Flask</a>
+                <a class="dropdown-item" href="#">Adding more HTML Pages</a>
+                <a class="dropdown-item" href="#">Connect Both Pages With a Navigation</a>
+                <a class="dropdown-item" href="#">Link CSS with HTML File</a>
+              </div>
+            </li>
+
+            <!-- Virtual Environment -->
+            <!-- ************************* -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Virtual Environment</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Why Use Virtualenv</a>
+                <a class="dropdown-item" href="#">Getting Started with Virtualenv</a>
+                <a class="dropdown-item" href="#">Activitating the Virtual Environment</a>
+              </div>
+            </li>
+
+            <!-- Cloud Services -->
+            <!-- ************************* -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cloud Services</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Requirements</a>
+                <a class="dropdown-item" href="#">Deploying the Application</a>
+                <a class="dropdown-item" href="#">Viewing the Application</a>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>
+          <h2>Introduction to Documentation</h2>
+        </header>
+      </section>
+
+      <section class="main-section" id="http_explanation">
+        <header>
+          <h2>HTTP Explanation</h2>
+        </header>
+      </section>
+
+      <section class="main-section" id="introduction_to_flask">
+        <header>
+          <h2>Introduction to Flask</h2>
+        </header>
+      </section>
+
+      <section class="main-section" id="html_css_with_Flask">
+        <header>
+          <h2>HTML and CSS with Flask</h2>
+        </header>
+      </section>
+
+      <section class="main-section" id="virtual_environment">
+        <header>
+          <h2>Virtual Environment</h2>
+        </header>
+      </section>
+
+      <section class="main-section" id="cloud_services">
+        <header>
+          <h2>Cloud Services</h2>
+        </header>
+      </section>
+
+
+    </main>
+
+
+    <footer>
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
