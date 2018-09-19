@@ -1,8 +1,43 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Slabo 27px', serif; */
+/*
+
 nav .logo {
   padding: 22px 20px;
   float: left;
   font-size: 20px;
   color: black;
+}
+
+/* -----------------------------------------
+  Navigation
+*/
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+
+
+/* -----------------------------------------
+  Document Text
+*/
+article h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+article p {
+  font-family: 'Slabo 27px', serif;
+}
+
+img {
+
+}
+
+#main-doc {
+  display: block;
+  float: right;
 }
