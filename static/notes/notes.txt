@@ -1,0 +1,39 @@
+Problem:
+- I was recently trying to make the navigation vertically and fixed
+  while the content is the one that scrolls
+
+Solution:
+- Got inspiration from this article: https://css-tricks.com/left-and-right/#article-header-id-5
+- https://stackoverflow.com/questions/9707397/making-a-div-vertically-scrollable-using-css
+  overflow: auto;
+  max-height: 100vh;
+
+- I recently tried this solution from this stack overflow post where they mentioned
+  to use max-height: 100vh
+
+- I didn't know what vh so I found some potential answer
+
+
+- Consider using 100vw / 100vh CSS units to make things full page
+  - https://github.com/alvarotrigo/fullPage.js/issues/854
+
+  - 100vw will always calculate out to 100% of the viewport width.
+    If you use percentages, and you don't have 100% down from the root,
+    you can't be assured of 100% calculating to 100% of the viewport.
+    (And that's the whole purpose of the vw/vh units: 1vw == 1% of the viewport width)
+
+  - vh is used when trying to make content fit the entire page. This worked
+    for me since I wanted the content from the tutorial to cover the entire
+    page and the same for the scrollbar
+
+Problem:
+- We needed to find a way to place the content side by side. Where the navigation bar
+  is on the left and documentation content is on the right
+
+Solution:
+- I used display: flex and this helped me place the content side by side
+
+- This worked because when you use flex it places the content in the default
+  direction along a row. Take a look here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+ 

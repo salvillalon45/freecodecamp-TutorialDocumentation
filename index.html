@@ -28,275 +28,371 @@ Salvador Villalon
     <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
     <link href= "./static/css/reset.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="./static/css/index.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
-    <header>
+    <section class="entire-page">
+      <header>
 
-      <!-- Navigation -->
-      <!-- ***************************************************** -->
-      <div class="navigation">
-        <nav id="nav-bar">
+        <!-- Navigation -->
+        <!-- ***************************************************** -->
+        <div class="navigation">
+          <nav id="nav-bar">
 
-          <div class="logo">
-            <p>Salvador Villalon: Flask and Cloud Services Documentation</p>
-          </div>
+            <div class="logo">
+              <p>Flask and Cloud Services Documentation Tutorial</p>
+            </div>
 
-          <ul>
-            <!-- HTTP Explanation  -->
-            <!-- ************************* -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTTP Explanation</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">What is HTTP and What does it have to do with Flask?</a>
-                <a class="dropdown-item" href="#">How is Flask Involved?</a>
-              </div>
-            </li>
+            <ul>
+              <!-- HTTP Explanation  -->
+              <!-- ************************* -->
+              <li class="nav-item dropdown">
+                <strong><a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTTP Explanation</a></strong>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">HTTP Explanation</a>
+                  <a class="dropdown-item" href="#">What is HTTP?</a>
+                  <a class="dropdown-item" href="#">How is Flask Involved?</a>
+                </div>
+              </li>
 
-            <!-- Introduction to Flask  -->
-            <!-- ************************* -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Introduction to Flask</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">What is Flask?</a>
-                <a class="dropdown-item" href="#">How Does a Flask App Work?</a>
-                <a class="dropdown-item" href="#">Running main.py</a>
-                <a class="dropdown-item" href="#">More Fun with Flask</a>
-              </div>
-            </li>
+              <!-- Introduction to Flask  -->
+              <!-- ************************* -->
+              <li class="nav-item dropdown">
+                <strong><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Introduction to Flask</a></strong>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Introduction to Flask</a>
+                  <a class="dropdown-item" href="#">What is Flask?</a>
+                  <a class="dropdown-item" href="#">How Does a Flask App Work?</a>
+                  <a class="dropdown-item" href="#">Running main.py</a>
+                  <a class="dropdown-item" href="#">More Fun with Flask</a>
+                </div>
+              </li>
 
-            <!-- HTML and CSS -->
-            <!-- ************************* -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTML and CSS</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">HTML and Templates in Flask</a>
-                <a class="dropdown-item" href="#">Adding more HTML Pages</a>
-                <a class="dropdown-item" href="#">Connect Both Pages With a Navigation</a>
-                <a class="dropdown-item" href="#">Link CSS with HTML File</a>
-              </div>
-            </li>
+              <!-- HTML and CSS -->
+              <!-- ************************* -->
+              <li class="nav-item dropdown">
+                <strong><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTML and CSS</a></strong>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">HTML and CSS with Flask</a>
+                  <a class="dropdown-item" href="#">HTML and Templates in Flask</a>
+                  <a class="dropdown-item" href="#">Adding more HTML Pages</a>
+                  <a class="dropdown-item" href="#">Connect Both Pages With a Navigation</a>
+                  <a class="dropdown-item" href="#">Link CSS with HTML File</a>
+                </div>
+              </li>
 
-            <!-- Virtual Environment -->
-            <!-- ************************* -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Virtual Environment</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Why Use Virtualenv</a>
-                <a class="dropdown-item" href="#">Getting Started with Virtualenv</a>
-                <a class="dropdown-item" href="#">Activitating the Virtual Environment</a>
-              </div>
-            </li>
+              <!-- Virtual Environment -->
+              <!-- ************************* -->
+              <li class="nav-item dropdown">
+                <strong><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Virtual Environment</a></strong>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Virtual Environment</a>
+                  <a class="dropdown-item" href="#">Why Use Virtualenv</a>
+                  <a class="dropdown-item" href="#">Getting Started with Virtualenv</a>
+                  <a class="dropdown-item" href="#">Activitating the Virtual Environment</a>
+                </div>
+              </li>
 
-            <!-- Cloud Services -->
-            <!-- ************************* -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cloud Services</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Requirements</a>
-                <a class="dropdown-item" href="#">Deploying the Application</a>
-                <a class="dropdown-item" href="#">Viewing the Application</a>
-              </div>
-            </li>
+              <!-- Cloud Services -->
+              <!-- ************************* -->
+              <li class="nav-item dropdown">
+                <strong><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cloud Services</a></strong>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="introduction">Cloud Services</a>
+                  <a class="dropdown-item" href="#">Requirements</a>
+                  <a class="dropdown-item" href="#">Deploying the Application</a>
+                  <a class="dropdown-item" href="#">Viewing the Application</a>
+                </div>
+              </li>
 
-          </ul>
-        </nav>
-      </div>
+            </ul>
+          </nav>
+        </div>
 
-    </header>
-
-
-    <main id="main-doc">
-
-      <!-- Introduction -->
-      <!-- ***************************************************** -->
-      <section class="main-section" id="introduction">
-        <header>
-          <h2>Introduction to Documentation</h2>
-        </header>
-        <article>
-          <p>In each section, I will show pieces of code for you to follow along. All the code used in the tutorial is available in this <a target="_blank" href="https://github.com/salvillalon45/SPGISummer2018-FlaskTutorial">GitHub Repository</a>.</p>
-        </article>
-      </section>
+      </header>
 
 
-      <!-- HTTP Explanation -->
-      <!-- ***************************************************** -->
-      <section class="main-section" id="http_explanation">
-        <header>
-          <h2>HTTP Explanation</h2>
-        </header>
-        <article>
-          <h3>What is HTTP?</h3>
-          <p><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> is the protocol for websites. The internet uses it to interact and communicate with computers and servers. Let me give you an example of how you use it everyday.</p>
-          <p>When you type the name of a website in the address bar of your browser and you hit enter. What happens is that an HTTP request has been sent to a server.</p>
-          <p>For example, when I go to my address bar and type google.com, then hit enter, an HTTP request is sent to a Google Server. The Google Server receives the request and needs to figure how to interpret that request. The Google Server sends back an HTTP response that contains the information that my web browser receives. Then it displays what you asked for on a page in the browser.</p>
+      <main id="main-doc">
 
-          <h3>How is Flask involved?</h3>
-          <p>We will write code that will take care of the server side processing. Our code will receive requests. It will figure out what those requests are dealing with and what they are asking. It will also figure out what response to send to the user.
-             To do all this we will use Flask.</p>
-        </article>
-      </section>
+        <!-- Introduction -->
+        <!-- ***************************************************** -->
+        <section class="main-section" id="introduction">
+          <header>
+            <h2>Introduction to Documentation</h2>
+          </header>
+          <article>
+            <p>In each section, I will show pieces of code for you to follow along. All the code used in the tutorial is available in this <a target="_blank" href="https://github.com/salvillalon45/SPGISummer2018-FlaskTutorial">GitHub Repository</a>.</p>
+          </article>
+        </section>
 
 
-      <!-- Introduction to Flask -->
-      <!-- ***************************************************** -->
-      <section class="main-section" id="introduction_to_flask">
-        <header>
-          <h2>Introduction to Flask</h2>
-        </header>
-        <article>
+        <!-- HTTP Explanation -->
+        <!-- ***************************************************** -->
+        <section class="main-section" id="http_explanation">
+          <header>
+            <h2>HTTP Explanation</h2>
+          </header>
+          <article>
+            <h3>What is HTTP?</h3>
+            <p><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> is the protocol for websites. The internet uses it to interact and communicate with computers and servers. Let me give you an example of how you use it everyday.</p>
+            <p>When you type the name of a website in the address bar of your browser and you hit enter. What happens is that an HTTP request has been sent to a server.</p>
+            <p>For example, when I go to my address bar and type google.com, then hit enter, an HTTP request is sent to a Google Server. The Google Server receives the request and needs to figure how to interpret that request. The Google Server sends back an HTTP response that contains the information that my web browser receives. Then it displays what you asked for on a page in the browser.</p>
 
-          <!-- What is Flask -->
-          <!-- ********************************** -->
-          <h3>What is Flask?</h3>
-          <img style="height: 150px;" src="./static/images/intro_flask/flask_logo.png" alt="Flask (A Python Microframework)">
-          <p>It makes the process of designing a web application simpler. Flask lets us focus on what the users are requesting and what sort of response to give back.</p>
-          <p><a href="https://en.wikipedia.org/wiki/Microframework">Learn more about micro frameworks.</a></p>
-
-
-          <!-- How Does a Flask App Work? -->
-          <!-- ********************************** -->
-          <h3>How Does a Flask App Work?</h3>
-          <p>The code lets us run a basic web application that we can serve, as if it were a website.</p>
-
-          <pre>
-            <code>
-              from flask import Flask
-
-              app = Flask(__name__)
-
-              @app.route("/")
-
-              def home():
-                return "Hello, World!"
-
-              if __name__ == "__main__":
-                app.run(debug=True)
-            </code>
-          </pre>
-
-          <p>This piece of code is stored in our main.py.</p>
-          <p><strong>Line 1:</strong> Here we are importing the Flask module and creating a Flask web server from the Flask module.</p>
-          <p><strong>Line 3:</strong> Line 3: __name__ means this current file. In this case, it will be main.py. This current file will represent my web application.</p>
-          <p>We are creating an instance of the Flask class and calling it app. Here we are creating a new web application.</p>
-          <p><strong>Line 5:</strong> It represents the default page. For example, if I go to a website such as “google.com/” with nothing after the slash. Then this will be the default page of Google.</p>
-
-          <img style="height: 150px;" src="./static/images/intro_flask/google_home.PNG" alt="The Google Home Page. This is what the @app.route(“/”) will represent">
-          <p><strong>Line 6-7:</strong> When the user goes to my website and they go to the default page (nothing after the slash), then the function below will get activated.</p>
-          <p><strong>Line 9:</strong> When you run your Python script, Python assigns the name “__main__” to the script when executed.</p>
-          <p>If we import another script, the if statement will prevent other scripts from running. When we run main.py, it will change its name to __main__ and only then will that if statement activate.</p>
-          <p><strong>Line 10:</strong> This will run the application. Having debug=True allows possible Python errors to appear on the web page. This will help us trace the errors.</p>
+            <h3>How is Flask involved?</h3>
+            <p>We will write code that will take care of the server side processing. Our code will receive requests. It will figure out what those requests are dealing with and what they are asking. It will also figure out what response to send to the user.
+               To do all this we will use Flask.</p>
+          </article>
+        </section>
 
 
-          <!-- Let’s Try Running main.py -->
-          <!-- ********************************** -->
-          <h3>Let’s Try Running main.py</h3>
-          <p>In your Terminal or Command Prompt go to the folder that contains your main.py. Then do py main.py or python main.py. In your terminal or command prompt you should see this output.</p>
-          <img src="./static/images/intro_flask/terminal_output.PNG" alt="Terminal Output">
-          <p>The important part is where it says Running on http://127.0.0.1:5000/.</p>
+        <!-- Introduction to Flask -->
+        <!-- ***************************************************** -->
+        <section class="main-section" id="introduction_to_flask">
+          <header>
+            <h2>Introduction to Flask</h2>
+          </header>
+          <article>
 
-          <p>127.0.0.1 means this local computer. If you do not know the meaning of this (like I didn’t when I started — this article is really helpful), the main idea is that 127.0.0.1 and localhost refer to this local computer.</p>
-          <p>Go to that address and you should see the following:</p>
-          <img src="./static/images/intro_flask/home.PNG" alt="Hello World Example">
-
-
-          <!-- More Fun with Flask -->
-          <!-- ********************************** -->
-          <h3>More Fun with Flask</h3>
-          <p>Earlier you saw what happened when we ran main.py with one route which was app.route(“/”).</p>
-          <p>Let’s add more routes so you can see the difference.</p>
-          <pre>
-            <code>
-              from flask import Flask
-
-              app = Flask(__name__)
-
-              @app.route("/")
-
-              def home():
-                return "Hello, World!"
-
-              def salvador():
-                return "Hello, Salvador"
-
-              if __name__ == "__main__":
-                app.run(debug=True)
-            </code>
-          </pre>
-
-          <p>In <strong>Line 9-11:</strong> we added a new route, this time to /salvador. Now run the main.py again and go to http://localhost:5000/salvador.</p>
-          <img src="./static/images/intro_flask/salvador_route.PNG" alt="Hello Salvador Example">
-          <p>So far we have been returning text. Let’s make our website look nicer by adding HTML and CSS.</p>
-        </article>
-      </section>
-
-      <section class="main-section" id="html_css_with_Flask">
-        <header>
-          <h2>HTML and CSS with Flask</h2>
-        </header>
-        <article>
+            <!-- What is Flask -->
+            <!-- ********************************** -->
+            <h3>What is Flask?</h3>
+            <img style="height: 150px;" src="./static/images/intro_flask/flask_logo.png" alt="Flask (A Python Microframework)">
+            <p>It makes the process of designing a web application simpler. Flask lets us focus on what the users are requesting and what sort of response to give back.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Microframework">Learn more about micro frameworks.</a></p>
 
 
-          <!-- HTML and Templates in Flask -->
-          <!-- ********************************** -->
-          <h3>HTML and Templates in Flask</h3>
-          <p>First create a new HTML file. I called mine home.html. Here is some code to get you started.</p>
+            <!-- How Does a Flask App Work? -->
+            <!-- ********************************** -->
+            <h3>How Does a Flask App Work?</h3>
+            <p>The code lets us run a basic web application that we can serve, as if it were a website.</p>
 
-          <pre>
-            <code>
-              &lt;!DOCTYPE html&gt;
-                &lt;html lang="en" dir="ltr"&gt;
-                  &lt;head&gt;
-                    &lt;meta charset="utf-8"&gt;
-                    &lt;title&gt;Flask Tutorial&lt;/title&gt;
-                  &lt;/head&gt;
+            <pre>
+              <code>
+                from flask import Flask
 
-                  &lt;body&gt;
-                    &lt;h1&gt;My First Try Using Flask&lt;/h1&gt;
-                    &lt;p&gt;Flask is Fun&lt;p&gt;
-                  &lt;/body&gt;
-                &lt;/html&gt;
-            </code>
-          </pre>
+                app = Flask(__name__)
 
-          <p>The Flask Framework looks for HTML files in a folder called templates. You need to create a templates folder and put all your HTML files in there.</p>
-          <img src="./static/images/create_html/folder_first.PNG" alt="Display the Current Directory">
-          <p>Now we need to change our main.py so that we can view the HTML file we created.</p>
+                @app.route("/")
 
-          <pre>
-            <code>
-              from flask import Flask, render_template
+                def home():
+                  return "Hello, World!"
 
-              app = Flask(__name__)
+                if __name__ == "__main__":
+                  app.run(debug=True)
+              </code>
+            </pre>
 
-              @app.route("/")
-              def home():
-                return render_template("home.html")
+            <p>This piece of code is stored in our main.py.</p>
+            <p><strong>Line 1:</strong> Here we are importing the Flask module and creating a Flask web server from the Flask module.</p>
+            <p><strong>Line 3:</strong> Line 3: __name__ means this current file. In this case, it will be main.py. This current file will represent my web application.</p>
+            <p>We are creating an instance of the Flask class and calling it app. Here we are creating a new web application.</p>
+            <p><strong>Line 5:</strong> It represents the default page. For example, if I go to a website such as “google.com/” with nothing after the slash. Then this will be the default page of Google.</p>
 
-              @app.route("/salvador")
-              def salvador():
-                return "Hello, Salvador"
-
-              if __name__ == "__main__":
-                app.run(debug=True)
-            </code>
-          </pre>
-
-          <p><strong>Line 1:</strong> We imported render_template() method from the flask framework. render_template() looks for a template (HTML file) in the templates folder. Then it will render the template for which you ask. <a href="http://flask.pocoo.org/docs/0.12/quickstart/#rendering-templates">Learn more about render_templates() function.</a></p>
-          <p><strong>Line 7:</strong> We change the return so that now it returns render_template(“home.html”). This will let us view our HTML file.</p>
-          <p>Now visit your localhost and see the changes: http://localhost:5000/.</p>
-          <img src="./static/images/create_html/new_output.PNG" alt="Update default route">
+            <img style="height: 150px;" src="./static/images/intro_flask/google_home.PNG" alt="The Google Home Page. This is what the @app.route(“/”) will represent">
+            <p><strong>Line 6-7:</strong> When the user goes to my website and they go to the default page (nothing after the slash), then the function below will get activated.</p>
+            <p><strong>Line 9:</strong> When you run your Python script, Python assigns the name “__main__” to the script when executed.</p>
+            <p>If we import another script, the if statement will prevent other scripts from running. When we run main.py, it will change its name to __main__ and only then will that if statement activate.</p>
+            <p><strong>Line 10:</strong> This will run the application. Having debug=True allows possible Python errors to appear on the web page. This will help us trace the errors.</p>
 
 
-          <!-- Let’s add more pages -->
-          <!-- ********************************** -->
-          <h3>Let’s add more pages</h3>
-          <p>Let’s create an about.html inside the templates folder.</p>
+            <!-- Let’s Try Running main.py -->
+            <!-- ********************************** -->
+            <h3>Let’s Try Running main.py</h3>
+            <p>In your Terminal or Command Prompt go to the folder that contains your main.py. Then do py main.py or python main.py. In your terminal or command prompt you should see this output.</p>
+            <img src="./static/images/intro_flask/terminal_output.PNG" alt="Terminal Output">
+            <p>The important part is where it says Running on http://127.0.0.1:5000/.</p>
 
-          <pre>
+            <p>127.0.0.1 means this local computer. If you do not know the meaning of this (like I didn’t when I started — this article is really helpful), the main idea is that 127.0.0.1 and localhost refer to this local computer.</p>
+            <p>Go to that address and you should see the following:</p>
+            <img src="./static/images/intro_flask/home.PNG" alt="Hello World Example">
+
+
+            <!-- More Fun with Flask -->
+            <!-- ********************************** -->
+            <h3>More Fun with Flask</h3>
+            <p>Earlier you saw what happened when we ran main.py with one route which was app.route(“/”).</p>
+            <p>Let’s add more routes so you can see the difference.</p>
+            <pre>
+              <code>
+                from flask import Flask
+
+                app = Flask(__name__)
+
+                @app.route("/")
+
+                def home():
+                  return "Hello, World!"
+
+                def salvador():
+                  return "Hello, Salvador"
+
+                if __name__ == "__main__":
+                  app.run(debug=True)
+              </code>
+            </pre>
+
+            <p>In <strong>Line 9-11:</strong> we added a new route, this time to /salvador. Now run the main.py again and go to http://localhost:5000/salvador.</p>
+            <img src="./static/images/intro_flask/salvador_route.PNG" alt="Hello Salvador Example">
+            <p>So far we have been returning text. Let’s make our website look nicer by adding HTML and CSS.</p>
+          </article>
+        </section>
+
+        <section class="main-section" id="html_css_with_Flask">
+          <header>
+            <h2>HTML and CSS with Flask</h2>
+          </header>
+          <article>
+
+
+            <!-- HTML and Templates in Flask -->
+            <!-- ********************************** -->
+            <h3>HTML and Templates in Flask</h3>
+            <p>First create a new HTML file. I called mine home.html. Here is some code to get you started.</p>
+
+            <pre>
+              <code>
+                &lt;!DOCTYPE html&gt;
+                  &lt;html lang="en" dir="ltr"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="utf-8"&gt;
+                      &lt;title&gt;Flask Tutorial&lt;/title&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                      &lt;h1&gt;My First Try Using Flask&lt;/h1&gt;
+                      &lt;p&gt;Flask is Fun&lt;p&gt;
+                    &lt;/body&gt;
+                  &lt;/html&gt;
+              </code>
+            </pre>
+
+            <p>The Flask Framework looks for HTML files in a folder called templates. You need to create a templates folder and put all your HTML files in there.</p>
+            <img src="./static/images/create_html/folder_first.PNG" alt="Display the Current Directory">
+            <p>Now we need to change our main.py so that we can view the HTML file we created.</p>
+
+            <pre>
+              <code>
+                from flask import Flask, render_template
+
+                app = Flask(__name__)
+
+                @app.route("/")
+                def home():
+                  return render_template("home.html")
+
+                @app.route("/salvador")
+                def salvador():
+                  return "Hello, Salvador"
+
+                if __name__ == "__main__":
+                  app.run(debug=True)
+              </code>
+            </pre>
+
+            <p><strong>Line 1:</strong> We imported render_template() method from the flask framework. render_template() looks for a template (HTML file) in the templates folder. Then it will render the template for which you ask. <a href="http://flask.pocoo.org/docs/0.12/quickstart/#rendering-templates">Learn more about render_templates() function.</a></p>
+            <p><strong>Line 7:</strong> We change the return so that now it returns render_template(“home.html”). This will let us view our HTML file.</p>
+            <p>Now visit your localhost and see the changes: http://localhost:5000/.</p>
+            <img src="./static/images/create_html/new_output.PNG" alt="Update default route">
+
+
+            <!-- Let’s add more pages -->
+            <!-- ********************************** -->
+            <h3>Let’s add more pages</h3>
+            <p>Let’s create an about.html inside the templates folder.</p>
+
+            <pre>
+              <code>
+                &lt;!DOCTYPE html&gt;
+                  &lt;html lang="en" dir="ltr"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="utf-8"&gt;
+                      &lt;title&gt;About Flask&lt;/title&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                      &lt;h1&gt;About Flask&lt;/h1&gt;
+                      &lt;p&gt;Applications that use the Flask framework include Pinterest,
+                              LinkedIn, and the community web page for Flask itself.&lt;p&gt;
+                    &lt;/body&gt;
+                  &lt;/html&gt;
+              </code>
+            </pre>
+
+            <p>Let’s make a change similar to what we did before to our main.py.</p>
+
+            <pre>
+              <code>
+                  from flask import Flask, render_template
+
+                  app = Flask(__name__)
+
+                  @app.route("/")
+                  def home():
+                    return render_template("home.html")
+
+                  @app.route("/about)
+                  def about():
+                    return render_template("about.html")
+
+                  if __name__ == "__main__":
+                    app.run(debug=True)
+              </code>
+            </pre>
+
+            <p>We made three new changes:</p>
+            <p><strong>Line 9:</strong> Change the route to"/about".</p>
+            <p><strong>Line 10:</strong> Change the function so it is now def about():</p>
+            <p><strong>Line 11:</strong> Change the return so that now it returns render_template("about.html").</p>
+            <p>Now see the changes: http://localhost:5000/about.</p>
+
+            <img src="./static/images/about_html/updated_output.PNG" alt="about html output">
+
+
+            <!-- Let’s Connect Both Pages with a Navigation -->
+            <!-- ********************************** -->
+            <h3>Let’s Connect Both Pages with a Navigation</h3>
+            <p>To connect both pages we can have a navigation menu on the top. We can use Flask to make the process of creating a navigation menu easier.
+                 First, let’s create a <strong>template.html</strong>. This <strong>template.html</strong> will serve as a parent template. Our two child templates will inherit code from it.</p>
+
+            <pre>
+             <code>
+               &lt;!DOCTYPE html&gt;
+                 &lt;html lang="en" dir="ltr"&gt;
+                   &lt;head&gt;
+                     &lt;meta charset="utf-8"&gt;
+                     &lt;title&gt;About Flask&lt;/title&gt;
+                   &lt;/head&gt;
+
+                   &lt;body&gt;
+                    &lt;header&gt;
+                    &lt;div class="container"&gt;
+                      &lt;h1 class="logo"&gt;First Web App&lt;/h1&gt;
+                      &lt;strong&gt;&lt;nav&gt;
+                        &lt;ul class="menu"&gt;
+                          &lt;li&gt;&lt;a href="{{ url_for('home') }}"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="{{ url_for('about') }}"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;nav&gt;&lt;strong&gt;
+                    &lt;/header&gt;
+
+                    {% block content %}
+                    {% endblock %}
+
+                   &lt;/body&gt;
+                 &lt;/html&gt;
+             </code>
+           </pre>
+
+           <p><strong>Line 13-14:</strong> We use the function called url_for(). It accepts the name of the function as an argument. Right now we gave it the name of the function. <a href='http://flask.pocoo.org/docs/0.12/quickstart/#url-building'>More information on url_for() function.</a></p>
+           <p>The two lines with the curly brackets will be <strong>replaced by the content of home.html and about.html.</strong> This will depend on the URL in which the user is browsing.</p>
+
+           <p>These changes allow the child pages (home.html and about.html) to connect to the parent (template.html). This allows us to not have to <strong>copy the code for the navigation menu in the about.html and home.html.</strong></p>
+           <p>Content of about.html:</p>
+
+           <pre>
             <code>
               &lt;!DOCTYPE html&gt;
                 &lt;html lang="en" dir="ltr"&gt;
@@ -306,49 +402,20 @@ Salvador Villalon
                   &lt;/head&gt;
 
                   &lt;body&gt;
+                    {% extends "template.html" %}
+                    {% block content %}
                     &lt;h1&gt;About Flask&lt;/h1&gt;
                     &lt;p&gt;Applications that use the Flask framework include Pinterest,
-                            LinkedIn, and the community web page for Flask itself.&lt;p&gt;
+                       LinkedIn, and the community web page for Flask itself.&lt;p&gt;
+
+                   {% endblock %}
+
                   &lt;/body&gt;
                 &lt;/html&gt;
             </code>
           </pre>
 
-          <p>Let’s make a change similar to what we did before to our main.py.</p>
-
-          <pre>
-            <code>
-                from flask import Flask, render_template
-
-                app = Flask(__name__)
-
-                @app.route("/")
-                def home():
-                  return render_template("home.html")
-
-                @app.route("/about)
-                def about():
-                  return render_template("about.html")
-
-                if __name__ == "__main__":
-                  app.run(debug=True)
-            </code>
-          </pre>
-
-          <p>We made three new changes:</p>
-          <p><strong>Line 9:</strong> Change the route to"/about".</p>
-          <p><strong>Line 10:</strong> Change the function so it is now def about():</p>
-          <p><strong>Line 11:</strong> Change the return so that now it returns render_template("about.html").</p>
-          <p>Now see the changes: http://localhost:5000/about.</p>
-
-          <img src="./static/images/about_html/updated_output.PNG" alt="about html output">
-
-
-          <!-- Let’s Connect Both Pages with a Navigation -->
-          <!-- ********************************** -->
-          <h3>Let’s Connect Both Pages with a Navigation</h3>
-          <p>To connect both pages we can have a navigation menu on the top. We can use Flask to make the process of creating a navigation menu easier.
-               First, let’s create a <strong>template.html</strong>. This <strong>template.html</strong> will serve as a parent template. Our two child templates will inherit code from it.</p>
+          <p>Content of home.html:</p>
 
           <pre>
            <code>
@@ -360,18 +427,12 @@ Salvador Villalon
                  &lt;/head&gt;
 
                  &lt;body&gt;
-                  &lt;header&gt;
-                  &lt;div class="container"&gt;
-                    &lt;h1 class="logo"&gt;First Web App&lt;/h1&gt;
-                    &lt;strong&gt;&lt;nav&gt;
-                      &lt;ul class="menu"&gt;
-                        &lt;li&gt;&lt;a href="{{ url_for('home') }}"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="{{ url_for('about') }}"&gt;About&lt;/a&gt;&lt;/li&gt;
-                      &lt;/ul&gt;
-                    &lt;nav&gt;&lt;strong&gt;
-                  &lt;/header&gt;
+                   {% extends "template.html" %}
+                   {% block content %}
 
-                  {% block content %}
+                   &lt;h1&gt;My First Try Using Flask&lt;/h1&gt;
+                   &lt;p&gt;Flask is Fun&lt;p&gt;
+
                   {% endblock %}
 
                  &lt;/body&gt;
@@ -379,300 +440,247 @@ Salvador Villalon
            </code>
          </pre>
 
-         <p><strong>Line 13-14:</strong> We use the function called url_for(). It accepts the name of the function as an argument. Right now we gave it the name of the function. <a href='http://flask.pocoo.org/docs/0.12/quickstart/#url-building'>More information on url_for() function.</a></p>
-         <p>The two lines with the curly brackets will be <strong>replaced by the content of home.html and about.html.</strong> This will depend on the URL in which the user is browsing.</p>
-
-         <p>These changes allow the child pages (home.html and about.html) to connect to the parent (template.html). This allows us to not have to <strong>copy the code for the navigation menu in the about.html and home.html.</strong></p>
-         <p>Content of about.html:</p>
-
-         <pre>
-          <code>
-            &lt;!DOCTYPE html&gt;
-              &lt;html lang="en" dir="ltr"&gt;
-                &lt;head&gt;
-                  &lt;meta charset="utf-8"&gt;
-                  &lt;title&gt;About Flask&lt;/title&gt;
-                &lt;/head&gt;
-
-                &lt;body&gt;
-                  {% extends "template.html" %}
-                  {% block content %}
-                  &lt;h1&gt;About Flask&lt;/h1&gt;
-                  &lt;p&gt;Applications that use the Flask framework include Pinterest,
-                     LinkedIn, and the community web page for Flask itself.&lt;p&gt;
-
-                 {% endblock %}
-
-                &lt;/body&gt;
-              &lt;/html&gt;
-          </code>
-        </pre>
-
-        <p>Content of home.html:</p>
-
-        <pre>
-         <code>
-           &lt;!DOCTYPE html&gt;
-             &lt;html lang="en" dir="ltr"&gt;
-               &lt;head&gt;
-                 &lt;meta charset="utf-8"&gt;
-                 &lt;title&gt;About Flask&lt;/title&gt;
-               &lt;/head&gt;
-
-               &lt;body&gt;
-                 {% extends "template.html" %}
-                 {% block content %}
-
-                 &lt;h1&gt;My First Try Using Flask&lt;/h1&gt;
-                 &lt;p&gt;Flask is Fun&lt;p&gt;
-
-                {% endblock %}
-
-               &lt;/body&gt;
-             &lt;/html&gt;
-         </code>
-       </pre>
-
-       <p>Let’s try adding some CSS.</p>
+         <p>Let’s try adding some CSS.</p>
 
 
-       <!-- Adding CSS to Our Website -->
-       <!-- ********************************** -->
-       <h3>Adding CSS to Our Website</h3>
-         <p>In the same way as we created a folder called <strong>templates</strong> to store all our HTML templates, we need a folder called <strong>static</strong>.
-            In <strong>static</strong>, we will store our CSS, JavaScript, images, and other necessary files. That is why it is important that you should create a <strong>CSS folder to store your stylesheets.</strong> After you do this, your project folder should look like this:</p>
+         <!-- Adding CSS to Our Website -->
+         <!-- ********************************** -->
+         <h3>Adding CSS to Our Website</h3>
+           <p>In the same way as we created a folder called <strong>templates</strong> to store all our HTML templates, we need a folder called <strong>static</strong>.
+              In <strong>static</strong>, we will store our CSS, JavaScript, images, and other necessary files. That is why it is important that you should create a <strong>CSS folder to store your stylesheets.</strong> After you do this, your project folder should look like this:</p>
 
-          <img src="./static/images/adding_css/directory.PNG">
-          <h3>Linking our CSS with our HTML file</h3>
-          <p>Our template.html is the one that links all pages. We can insert the code here and it will be applicable to all child pages.</p>
+            <img src="./static/images/adding_css/directory.PNG">
+            <h3>Linking our CSS with our HTML file</h3>
+            <p>Our template.html is the one that links all pages. We can insert the code here and it will be applicable to all child pages.</p>
 
-          <pre>
-           <code>
-             &lt;!DOCTYPE html&gt;
-               &lt;html lang="en" dir="ltr"&gt;
-                 &lt;head&gt;
-                   &lt;meta charset="utf-8"&gt;
-                   &lt;title&gt;About Flask&lt;/title&gt;
+            <pre>
+             <code>
+               &lt;!DOCTYPE html&gt;
+                 &lt;html lang="en" dir="ltr"&gt;
+                   &lt;head&gt;
+                     &lt;meta charset="utf-8"&gt;
+                     &lt;title&gt;About Flask&lt;/title&gt;
 
-                   &lt;link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}"&gt;
-                 &lt;/head&gt;
+                     &lt;link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}"&gt;
+                   &lt;/head&gt;
 
-                 &lt;body&gt;
-                  &lt;header&gt;
-                  &lt;div class="container"&gt;
-                    &lt;h1 class="logo"&gt;First Web App&lt;/h1&gt;
-                    &lt;strong&gt;&lt;nav&gt;
-                      &lt;ul class="menu"&gt;
-                        &lt;li&gt;&lt;a href="{{ url_for('home') }}"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="{{ url_for('about') }}"&gt;About&lt;/a&gt;&lt;/li&gt;
-                      &lt;/ul&gt;
-                    &lt;nav&gt;&lt;strong&gt;
-                  &lt;/header&gt;
+                   &lt;body&gt;
+                    &lt;header&gt;
+                    &lt;div class="container"&gt;
+                      &lt;h1 class="logo"&gt;First Web App&lt;/h1&gt;
+                      &lt;strong&gt;&lt;nav&gt;
+                        &lt;ul class="menu"&gt;
+                          &lt;li&gt;&lt;a href="{{ url_for('home') }}"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="{{ url_for('about') }}"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;nav&gt;&lt;strong&gt;
+                    &lt;/header&gt;
 
-                  {% block content %}
-                  {% endblock %}
+                    {% block content %}
+                    {% endblock %}
 
-                 &lt;/body&gt;
-               &lt;/html&gt;
-           </code>
-         </pre>
+                   &lt;/body&gt;
+                 &lt;/html&gt;
+             </code>
+           </pre>
 
-         <p><strong>Line 7:</strong>  Here we are giving the path to where the template.css is located.</a></p>
-         <p>Now see the changes: http://localhost:5000/about.</p>
-         <img src="./static/images/adding_css/page_color.PNG">
+           <p><strong>Line 7:</strong>  Here we are giving the path to where the template.css is located.</a></p>
+           <p>Now see the changes: http://localhost:5000/about.</p>
+           <img src="./static/images/adding_css/page_color.PNG">
 
-        </article>
-      </section>
+          </article>
+        </section>
 
-      <section class="main-section" id="virtual_environment">
-        <header>
-          <h2>Virtual Environment</h2>
-        </header>
+        <section class="main-section" id="virtual_environment">
+          <header>
+            <h2>Virtual Environment</h2>
+          </header>
+
+          <article>
+
+            <!-- Why use virtualenv -->
+            <!-- ********************************** -->
+            <h3>Why use virtualenv</h3>
+            <p>Now that you are familiar with using Flask, you may start using it in your future projects. One thing to always do is use virtualenv. You may use Python for others projects besides web-development.</p>
+            <p>Your projects might have different versions of Python installed, different dependencies and packages.</p>
+            <p>We use virtualenv to create an isolated environment for your Python project. This means that each project can have its own dependencies regardless of what dependencies every other project has.</p>
+
+            <h3>Getting started with virtualenv</h3>
+            <p>First, run this command on your command prompt or terminal:</p>
+            <pre>
+              <code>
+                pip install virtualenv
+              </code>
+            </pre>
+
+            <p>Second, do the following:</p>
+            <pre>
+              <code>
+                virtualenv “name of virtual environment”
+              </code>
+            </pre>
+
+            <p>Here you can give a name to the environment. I usually give it a name of virtual. It will look like this: <pre><code>virtualenv virtual.,</code></pre></p>
+            <p>After setting up virtual environment, check your project folder. It should look like this. The virtual environment needs to be created in the <strong>same directory where your app files are located.</strong></p>
+
+            <img src="./static/images/working_virtualenv/updated_directory.PNG" alt="updated directory">
+
+
+            <!-- Activating the virtual environment -->
+            <!-- ********************************** -->
+            <h3>Activating the virtual environment</h3>
+            <p>Now go to your terminal or command prompt. Go to the directory that contains the file called activate. The file called activate is found inside a folder called <strong>Scripts for Windows</strong> and <strong>bin for OS X and Linux.</strong></p>
+
+            <p>For OS X and Linux Environment:</p>
+            <pre>
+              <code>
+                $ name of virtual environmnet/bin/activate
+              </code>
+            </pre>
+
+            <p>For Windows Environment:</p>
+            <pre>
+              <code>
+                name of virtual environment\Scripts\activate
+              </code>
+            </pre>
+
+            <p>Since I am using a Windows machine, when I activate the environment it will look like this:</p>
+            <img src="./static/images/working_virtualenv/virtual_env_activate.PNG" alt="virtualenv is activated on the command line">
+
+            <p>The next step is to install flask on your virtual environment so that we can run the application inside our environment. Run the command:</p>
+            <pre>
+              <code>
+                pip install flask
+              </code>
+            </pre>
+
+            <p>Run your application and go to http://localhost:5000/</p>
+
+            <p>We finally made our web application. Now we want to show the whole world our project.</p>
+            <p>(More information on virtualenv can be found in the following guides on <a href="https://realpython.com/python-virtual-environments-a-primer/"virtualenv</a> and <a href="http://flask.pocoo.org/docs/0.12/installation/#installation">Flask Official Documentation)</a></p>
+          </article>
+
+        </section>
+
+        <section class="main-section" id="cloud_services">
+          <header>
+            <h2>Cloud Services</h2>
+          </header>
+        </section>
 
         <article>
 
-          <!-- Why use virtualenv -->
+          <!-- Deploy Your Web Application to the Cloud -->
           <!-- ********************************** -->
-          <h3>Why use virtualenv</h3>
-          <p>Now that you are familiar with using Flask, you may start using it in your future projects. One thing to always do is use virtualenv. You may use Python for others projects besides web-development.</p>
-          <p>Your projects might have different versions of Python installed, different dependencies and packages.</p>
-          <p>We use virtualenv to create an isolated environment for your Python project. This means that each project can have its own dependencies regardless of what dependencies every other project has.</p>
+          <h3>Deploy Your Web Application to the Cloud</h3>
+          <p>To deploy our web application to the cloud, we will use <a href="https://cloud.google.com/appengine/">Google App Engine (Standard Environment)</a>. This is an example of a <strong>Platform as a Service (PaaS)</strong>.</p>
 
-          <h3>Getting started with virtualenv</h3>
-          <p>First, run this command on your command prompt or terminal:</p>
-          <pre>
-            <code>
-              pip install virtualenv
-            </code>
-          </pre>
-
-          <p>Second, do the following:</p>
-          <pre>
-            <code>
-              virtualenv “name of virtual environment”
-            </code>
-          </pre>
-
-          <p>Here you can give a name to the environment. I usually give it a name of virtual. It will look like this: <pre><code>virtualenv virtual.,</code></pre></p>
-          <p>After setting up virtual environment, check your project folder. It should look like this. The virtual environment needs to be created in the <strong>same directory where your app files are located.</strong></p>
-
-          <img src="./static/images/working_virtualenv/updated_directory.PNG" alt="updated directory">
+          <p><strong>PaaS</strong> refers to the <strong>delivery of operating systems and associated services over the internet without downloads or installation.</strong> The approach lets customers create and deploy applications without having to invest in the underlying infrastructure <a href='https://searchitchannel.techtarget.com/definition/cloud-services'>(More info on PaaS check out TechTarget)</a>.</p>
+          <p>Google App Engine is a platform as a service offering that allows developers and businesses to build and run applications using Google’s advanced infrastructure — <a href="https://www.techopedia.com/definition/31267/google-app-engine-gae">TechOpedia</a>.</p>
 
 
-          <!-- Activating the virtual environment -->
+          <!-- Before you Start: -->
           <!-- ********************************** -->
-          <h3>Activating the virtual environment</h3>
-          <p>Now go to your terminal or command prompt. Go to the directory that contains the file called activate. The file called activate is found inside a folder called <strong>Scripts for Windows</strong> and <strong>bin for OS X and Linux.</strong></p>
+          <h3>Before you Start:</h3>
+          <p>You will need a <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp">Google Account</a>. Once you create an account, go to the <a href="https://console.cloud.google.com">Google Cloud Platform Console</a> and create a new project. Also, you need to install the <a href="https://cloud.google.com/sdk/">Google Cloud SDK</a>.</p>
+          <p>At the end of this tutorial your project structure will look like this.</p>
 
-          <p>For OS X and Linux Environment:</p>
+          <img src="./static/images/deploy_the_app/project_structure.PNG" alt="What the directory should look like">
+
+          <p>We will need to create three new files: app.yaml, appengine_config.py, and requirements.txt.</p>
+
+          <p>Content of app.yaml:</p>
+
           <pre>
             <code>
-              $ name of virtual environmnet/bin/activate
+              runtime: python27
+              api_version: 1
+              threadsafe: true
+
+              handlers:
+              - url: /static
+                static_dir: static
+              - url: /.*
+                script: main.app
+
+             libraries:
+              - name: ssl
+                version: latest
             </code>
           </pre>
 
-          <p>For Windows Environment:</p>
+          <p>If you were to check <a href="https://cloud.google.com/appengine/docs/standard/python/getting-started/python-standard-env">Google’s Tutorial</a> in the part where they <strong>talk about content of the app.yaml</strong>, it does not include the section where I wrote about libraries.</p>
+          <p>When I first attempted to deploy my simple web app, my deployment never worked. After many attempts, I learned that we needed to include the SSL library.</p>
+          <p>The SSL Library allows us to <a href="https://wiki.python.org/moin/SSL">create secure connections between the client and server</a>. Every time the user goes to our website they will need to connect to a server run by Google App Engine. We need to create a secure connection for this. (I recently learned this, so if you have a suggestions for this let me know!)</p>
+
+          <p>Content of appengine_config.py:</p>
           <pre>
             <code>
-              name of virtual environment\Scripts\activate
+              from google.appengine.ext import vendor
+
+              # Add any libraries installed in the "lib" folder.
+              vendor.add('lib')
             </code>
           </pre>
 
-          <p>Since I am using a Windows machine, when I activate the environment it will look like this:</p>
-          <img src="./static/images/working_virtualenv/virtual_env_activate.PNG" alt="virtualenv is activated on the command line">
-
-          <p>The next step is to install flask on your virtual environment so that we can run the application inside our environment. Run the command:</p>
+          <p>Content of requirements.txt:</p>
           <pre>
             <code>
-              pip install flask
+              Flask
+              Werkzeug
             </code>
           </pre>
 
-          <p>Run your application and go to http://localhost:5000/</p>
+          <p>Now inside our virtual environment <strong>(make sure your virtualenv is activated),</strong> we are going to install the new dependencies we have in requirements.txt. Run this command:</p>
+          <pre>
+            <code>
+              pip install -t lib -r requirements.txt
+            </code>
+          </pre>
 
-          <p>We finally made our web application. Now we want to show the whole world our project.</p>
-          <p>(More information on virtualenv can be found in the following guides on <a href="https://realpython.com/python-virtual-environments-a-primer/"virtualenv</a> and <a href="http://flask.pocoo.org/docs/0.12/installation/#installation">Flask Official Documentation)</a></p>
+          <p><strong>-t lib:</strong> This flag copies the libraries into a lib folder, which uploads to App Engine during deployment.</p>
+          <p><strong>-r requirements.txt:</strong> Tells pip to install everything from requirements.txt.</p>
+
+          <!-- Deploying the Application -->
+          <!-- ********************************** -->
+          <h3>Deploying the Application</h3>
+          <p>To deploy the application to Google App Engine, use this command.</p>
+          <pre>
+            <code>
+              gcloud app deploy
+            </code>
+          </pre>
+
+          <p>I usually include — <strong>project [ID of Project]</strong></p>
+          <p>This specifies what project you are deploying. The command will look like this:</p>
+          <pre>
+            <code>
+              gcloud app deploy --project [ID of Project]
+            </code>
+          </pre>
+
+
+          <!-- The Application -->
+          <!-- ********************************** -->
+          <h3>The Application</h3>
+          <p>Now check the URL of your application. The application will be store in the following way:</p>
+          <pre>
+            <code>
+              "your project id".appspot.com
+            </code>
+          </pre>
+          <p>My application is here: <a href="http://sal-flask-tutorial.appspot.com">http://sal-flask-tutorial.appspot.com</a></p>
+
         </article>
 
-      </section>
-
-      <section class="main-section" id="cloud_services">
-        <header>
-          <h2>Cloud Services</h2>
-        </header>
-      </section>
-
-      <article>
-
-        <!-- Deploy Your Web Application to the Cloud -->
-        <!-- ********************************** -->
-        <h3>Deploy Your Web Application to the Cloud</h3>
-        <p>To deploy our web application to the cloud, we will use <a href="https://cloud.google.com/appengine/">Google App Engine (Standard Environment)</a>. This is an example of a <strong>Platform as a Service (PaaS)</strong>.</p>
-
-        <p><strong>PaaS</strong> refers to the <strong>delivery of operating systems and associated services over the internet without downloads or installation.</strong> The approach lets customers create and deploy applications without having to invest in the underlying infrastructure <a href='https://searchitchannel.techtarget.com/definition/cloud-services'>(More info on PaaS check out TechTarget)</a>.</p>
-        <p>Google App Engine is a platform as a service offering that allows developers and businesses to build and run applications using Google’s advanced infrastructure — <a href="https://www.techopedia.com/definition/31267/google-app-engine-gae">TechOpedia</a>.</p>
+      </main>
 
 
-        <!-- Before you Start: -->
-        <!-- ********************************** -->
-        <h3>Before you Start:</h3>
-        <p>You will need a <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp">Google Account</a>. Once you create an account, go to the <a href="https://console.cloud.google.com">Google Cloud Platform Console</a> and create a new project. Also, you need to install the <a href="https://cloud.google.com/sdk/">Google Cloud SDK</a>.</p>
-        <p>At the end of this tutorial your project structure will look like this.</p>
+      <footer>
+      </footer>
 
-        <img src="./static/images/deploy_the_app/project_structure.PNG" alt="What the directory should look like">
-
-        <p>We will need to create three new files: app.yaml, appengine_config.py, and requirements.txt.</p>
-
-        <p>Content of app.yaml:</p>
-
-        <pre>
-          <code>
-            runtime: python27
-            api_version: 1
-            threadsafe: true
-
-            handlers:
-            - url: /static
-              static_dir: static
-            - url: /.*
-              script: main.app
-
-           libraries:
-            - name: ssl
-              version: latest
-          </code>
-        </pre>
-
-        <p>If you were to check <a href="https://cloud.google.com/appengine/docs/standard/python/getting-started/python-standard-env">Google’s Tutorial</a> in the part where they <strong>talk about content of the app.yaml</strong>, it does not include the section where I wrote about libraries.</p>
-        <p>When I first attempted to deploy my simple web app, my deployment never worked. After many attempts, I learned that we needed to include the SSL library.</p>
-        <p>The SSL Library allows us to <a href="https://wiki.python.org/moin/SSL">create secure connections between the client and server</a>. Every time the user goes to our website they will need to connect to a server run by Google App Engine. We need to create a secure connection for this. (I recently learned this, so if you have a suggestions for this let me know!)</p>
-
-        <p>Content of appengine_config.py:</p>
-        <pre>
-          <code>
-            from google.appengine.ext import vendor
-
-            # Add any libraries installed in the "lib" folder.
-            vendor.add('lib')
-          </code>
-        </pre>
-
-        <p>Content of requirements.txt:</p>
-        <pre>
-          <code>
-            Flask
-            Werkzeug
-          </code>
-        </pre>
-
-        <p>Now inside our virtual environment <strong>(make sure your virtualenv is activated),</strong> we are going to install the new dependencies we have in requirements.txt. Run this command:</p>
-        <pre>
-          <code>
-            pip install -t lib -r requirements.txt
-          </code>
-        </pre>
-
-        <p><strong>-t lib:</strong> This flag copies the libraries into a lib folder, which uploads to App Engine during deployment.</p>
-        <p><strong>-r requirements.txt:</strong> Tells pip to install everything from requirements.txt.</p>
-
-        <!-- Deploying the Application -->
-        <!-- ********************************** -->
-        <h3>Deploying the Application</h3>
-        <p>To deploy the application to Google App Engine, use this command.</p>
-        <pre>
-          <code>
-            gcloud app deploy
-          </code>
-        </pre>
-
-        <p>I usually include — <strong>project [ID of Project]</strong></p>
-        <p>This specifies what project you are deploying. The command will look like this:</p>
-        <pre>
-          <code>
-            gcloud app deploy --project [ID of Project]
-          </code>
-        </pre>
-
-
-        <!-- The Application -->
-        <!-- ********************************** -->
-        <h3>The Application</h3>
-        <p>Now check the URL of your application. The application will be store in the following way:</p>
-        <pre>
-          <code>
-            "your project id".appspot.com
-          </code>
-        </pre>
-        <p>My application is here: <a href="http://sal-flask-tutorial.appspot.com">http://sal-flask-tutorial.appspot.com</a></p>
-
-      </article>
-
-    </main>
-
-
-    <footer>
-    </footer>
-
+  </section> <!-- Ending section tag for entire-page -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
