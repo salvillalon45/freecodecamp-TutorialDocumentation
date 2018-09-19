@@ -18,7 +18,10 @@ nav .logo {
 }
 
 #nav-bar {
-  font-size: 35px;
+  font-size: 25px;
+  /* margin-right: 40px; */
+  margin-left: 35px;
+  padding-right: 10px;
 }
 
 header a {
@@ -36,12 +39,25 @@ header h3 {
 */
 article h3 {
   font-family: 'Montserrat', sans-serif;
+  padding-top: 30px;
 }
 
 article p {
   font-family: 'Slabo 27px', serif;
-  font-size: 16px;
+  font-size: 20px;
 }
+
+article img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+article pre {
+  background-color: rgba(135,134,148,0.2);
+  color: black;
+  width: 500px;
+}
+
 
 /* Check notes.txt to check why we did this  */
 .entire-page {
@@ -58,10 +74,6 @@ main {
 main h2 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   padding-top: 30px;
-}
-
-img {
-
 }
