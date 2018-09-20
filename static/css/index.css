@@ -19,9 +19,16 @@ nav .logo {
 
 #nav-bar {
   font-size: 25px;
-  /* margin-right: 40px; */
-  margin-left: 35px;
   padding-right: 10px;
+  padding-left: 5px;
+  overflow: auto;
+  max-height: 100vh;
+  background-color: rgba(0,0,0,0.1);
+}
+
+#nav-bar p a {
+  color: black;
+
 }
 
 header a {
@@ -33,10 +40,24 @@ header h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+hr {
+  border: 2px solid black;
+}
+
+
 
 /* -----------------------------------------
   Document Text
 */
+
+#introduction ul {
+  list-style-type: none;
+}
+
+#introduction li {
+  display: inline;
+}
+
 article h3 {
   font-family: 'Montserrat', sans-serif;
   padding-top: 30px;
@@ -69,6 +90,7 @@ main {
   /* Check notes.txt to check why we did this  */
   overflow: auto;
   max-height: 100vh;
+  padding-left: 15px;
 }
 
 main h2 {
