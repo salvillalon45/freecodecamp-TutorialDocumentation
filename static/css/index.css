@@ -1,23 +1,14 @@
-/*
-
-nav .logo {
-  padding: 22px 20px;
-  float: left;
-  font-size: 20px;
-  color: black;
-}
-
 /* -----------------------------------------
   Navigation
 */
 
-#nav-bar ul {
+#navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#nav-bar {
+#navbar {
   font-size: 25px;
   padding-right: 10px;
   padding-left: 5px;
@@ -26,7 +17,7 @@ nav .logo {
   background-color: rgba(0,0,0,0.1);
 }
 
-#nav-bar p a {
+#navbar p a {
   color: black;
 
 }
@@ -50,11 +41,11 @@ hr {
   Document Text
 */
 
-#introduction ul {
+#introduction_to_documentation ul {
   list-style-type: none;
 }
 
-#introduction li {
+#introduction_to_documentation li {
   display: inline;
 }
 
@@ -84,6 +75,14 @@ article pre {
 .entire-page {
   display: flex;
   flex-direction: row;
+}
+
+/* This will get activated when the user views this on mobile */
+@media (max-width: 800px) {
+  .entire-page {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 main {
